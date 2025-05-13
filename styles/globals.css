@@ -24,6 +24,8 @@ body {
   line-height: 1.5;
 }
 
+/* UTILITIES STYLES */
+
 a {
   color: inherit;
   text-decoration: none;
@@ -51,6 +53,42 @@ a {
 
 .btn:hover {
   border-color: var(--color-text);
+}
+
+/* SECTION STYLES */
+
+.hero {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100svh;
+}
+
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.6)
+  );
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 15;
+}
+
+.hero .hero__video-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.hero .hero__video-wrapper .hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .85;
 }
 
 .text-hero {

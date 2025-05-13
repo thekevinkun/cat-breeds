@@ -1,6 +1,10 @@
+import { Hero } from "@/sections"
+
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+      <Hero />
+    </>
   )
 }
 
