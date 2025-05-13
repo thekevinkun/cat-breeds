@@ -2,4 +2,6 @@
 
 import { motion } from "framer-motion";
 
-export const MotionDiv = motion.div;
+const MotionDiv = motion.div;
+
+export default MotionDiv;

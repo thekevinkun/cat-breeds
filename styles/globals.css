@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap');
 
 :root {
@@ -8,6 +9,7 @@
   --border-color: #242424;
 
   --font-main: "Cascadia Code", sans-serif;
+  --font-logo: "Kaushan Script", cursive;
 }
 
 * {
@@ -18,10 +20,12 @@
 
 body {
   background: var(--background);
+  color: var(--color-text);
   font-family: var(--font-main);
   font-optical-sizing: auto;
   font-weight: 500;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 /* UTILITIES STYLES */
@@ -31,12 +35,46 @@ a {
   text-decoration: none;
 }
 
-.hero__padding {
-  padding: 2.5rem 4rem;
+ul {
+  list-style: none;
+}
+
+.padding {
+  padding: 3rem 4rem;
+}
+
+.padding-x {
+  padding: 0 4rem;
+}
+
+.padding-y {
+  padding: 3rem 0rem;
+}
+
+.padding-top {
+  padding-top: 3rem;
+}
+
+.padding-bottom {
+  padding-bottom: 3rem;
 }
 
 .section__padding {
   padding: 6rem 4rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .padding {
+    padding: 3rem 2rem;
+  }
+
+  .padding-x {
+    padding: 0 2rem;
+  }
+
+  .section__padding {
+    padding: 6rem 2rem;
+  }
 }
 
 .btn {
@@ -57,6 +95,107 @@ a {
 
 /* SECTION STYLES */
 
+/* HEADER STYLES */
+.header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+}
+
+.header .header__logo-wrapper {
+  background: var(--color-secondary);
+  padding: 2.35rem 2rem;
+}
+
+h1.header-logo {
+  font-family: var(--font-logo);
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: .85;
+}
+
+h1.header-logo .logo__text-bottom {
+  font-family: var(--font-main);
+  font-size: 0.575rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) { 
+  .header .header__logo-wrapper {
+    padding: 1.75rem 1rem;
+  }
+
+  h1.header-logo {
+    font-size: 1rem;
+  }
+
+  h1.header-logo .logo__text-bottom {
+    font-size: 0.45rem;
+  }
+}
+
+/* NAVBAR STYLES */
+.nav .menu-toggle {
+  position: relative;
+  z-index: 25;
+  background: var(--color-secondary);
+  color: var(--color-text);
+  padding: 0.725rem 0.65rem;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav .nav__menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 400px;
+  height: 100vh;
+  padding: 5.25rem 4.75rem 0 1.5rem;
+  text-align: end;
+  background: var(--color-secondary);
+  overflow: auto;
+  z-index: 20;
+}
+
+.nav .nav__menu-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav .nav__menu-list .menu-link_list {
+  margin-top: 1rem;
+}
+
+.nav__menu-list .menu-link_list .link {
+  font-size: 1.35rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1024px) { 
+  .nav .nav__menu {
+    padding: 5.25rem 3rem 0 1.5rem;
+  }
+}
+
+@media screen and (max-width: 640px) { 
+  .nav .nav__menu {
+    width: 100vw;
+  }
+}
+
+
+/* HERO STYLES */
 .hero {
   position: relative;
   z-index: 10;
@@ -95,17 +234,14 @@ a {
   font-size: 3rem;
   font-weight: 700;
   text-align: center;
-  color: var(--color-text);
 }
 
 .text-content {
   font-size: 1.5rem;
   font-weight: 400;
   text-align: center;  
-  color: var(--color-text);
 }
 
 .footer {
   background: var(--color-secondary);
-  color: var(--color-text);
 }

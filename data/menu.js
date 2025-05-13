@@ -12,6 +12,10 @@ export const menuList = [
         name: "Services"
     },
     {
+        link: "/shelter-center",
+        name: "Shelter Center"
+    },
+    {
         link: "/pet-community",
         name: "Pet community"
     },

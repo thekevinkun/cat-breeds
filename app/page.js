@@ -1,8 +1,9 @@
-import { Hero } from "@/sections"
+import { Header, Hero } from "@/sections"
 
 const Home = () => {
   return (
     <>
+      <Header />
       <Hero />
     </>
   )
