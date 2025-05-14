@@ -4,6 +4,7 @@ import MenuToggle from "@/components/MenuToggle";
 import DonutCursor from "@/components/DonutCursor";
 import { MotionDiv, MotionLink } from "@/components/MotionDiv";
 import ContentCard from "@/components/ContentCard";
+import SocialMedia from "@/components/SocialMedia";
 import LoadingDotLottie from "@/components/LoadingDotLottie";
 
 export {
@@ -14,5 +15,6 @@ export {
     MotionDiv,
     MotionLink,
     ContentCard,
+    SocialMedia,
     LoadingDotLottie,
 }

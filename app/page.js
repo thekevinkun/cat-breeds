@@ -1,4 +1,4 @@
-import { Header, Hero, ContentList } from "@/sections"
+import { Header, Hero, ContentList, Footer } from "@/sections"
 
 const Home = () => {
   return (
@@ -6,6 +6,7 @@ const Home = () => {
       <Header />
       <Hero />
       <ContentList />
+      <Footer />
     </>
   )
 }

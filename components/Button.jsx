@@ -1,6 +1,11 @@
-const Button = () => {
+const Button = ({text, btnStyles, handleClick}) => {
   return (
-    <div>Button</div>
+    <button
+      className={`btn ${btnStyles}`}
+      onClick={handleClick}
+    >
+      {text}
+    </button>
   )
 }
 
