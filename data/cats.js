@@ -2,8 +2,8 @@ export const cats = [
   {
     name: "Abyssinian",
     otherNames: "Aby",
-    photo: "/images/abyssinian-cat-1.png",
-    poster: "/images/abyssinian-cat-hero.png",
+    poster: "/images/abyssinian-cat-1.png",
+    backdrop: "/images/abyssinian-cat-hero.png",
     profile: {
       origin: "Abyssinia (Ethiopia)",
       height: `8''-10''`,
@@ -29,8 +29,8 @@ export const cats = [
   {
     name: "Bengal",
     otherNames: "Leopardette",
-    photo: "/images/bengal-cat-1.png",
-    poster: "/images/bengal-cat-hero.png",
+    poster: "/images/bengal-cat-1.png",
+    backdrop: "/images/bengal-cat-hero.png",
     profile: {
       origin: "United States",
       height: `13''-16''`,
@@ -61,8 +61,8 @@ export const cats = [
   {
     name: "British Shorthair",
     otherNames: ["Britanica", "Lowlander"],
-    photo: "/images/british-shorthair-cat-1.png",
-    poster: "/images/british-shorthair-cat-hero.png",
+    poster: "/images/british-shorthair-cat-1.png",
+    backdrop: "/images/british-shorthair-cat-hero.png",
     profile: {
       origin: "United Kingdom",
       height: `11''-14''`,
@@ -90,8 +90,8 @@ export const cats = [
   {
     name: "Burmese",
     otherNames: ["American Burmese"],
-    photo: "/images/burmese-cat-1.png",
-    poster: "/images/burmese-cat-hero.png",
+    poster: "/images/burmese-cat-1.png",
+    backdrop: "/images/burmese-cat-hero.png",
     profile: {
       origin: "Burma/Myanmar",
       height: `8''-10''`,
@@ -121,8 +121,8 @@ export const cats = [
   {
     name: "Maine Coon",
     otherNames: ["Maine Cat", "Coon Cat", "American Forest Cat"],
-    photo: "/images/maine-coon-cat-1.png",
-    poster: "/images/maine-coon-cat-hero.png",
+    poster: "/images/maine-coon-cat-1.png",
+    backdrop: "/images/maine-coon-cat-hero.png",
     profile: {
       origin: "United States",
       height: `10''-16''`,
@@ -150,8 +150,8 @@ export const cats = [
   {
     name: "Oriental Cat",
     otherNames: ["Javanese", "Mandarin"],
-    photo: "/images/oriental-cat-1.png",
-    poster: "/images/oriental-cat-hero.png",
+    poster: "/images/oriental-cat-1.png",
+    backdrop: "/images/oriental-cat-hero.png",
     profile: {
       origin: "United States, United Kingdom",
       height: `8''-10''`,
@@ -178,8 +178,8 @@ export const cats = [
   {
     name: "Savannah",
     otherNames: [],
-    photo: "/images/savannah-cat-1.png",
-    poster: "/images/savannah-cat-hero.png",
+    poster: "/images/savannah-cat-1.png",
+    backdrop: "/images/savannah-cat-hero.png",
     profile: {
       origin: "United States",
       height: `10''- 13''`,
@@ -206,8 +206,8 @@ export const cats = [
   {
     name: "Sphynx",
     otherNames: ["Canadian Sphynx", "Canadian Hairless Cat", "Moon Cat"],
-    photo: "/images/sphynx-cat-1.png",
-    poster: "/images/sphynx-cat-hero.png",
+    poster: "/images/sphynx-cat-1.png",
+    backdrop: "/images/sphynx-cat-hero.png",
     profile: {
       origin: "Canada",
       height: `8''- 10''`,
@@ -235,8 +235,8 @@ export const cats = [
   {
     name: "Turkish Angora",
     otherNames: ["Ankara"],
-    photo: "/images/turkish-angora-cat-1.png",
-    poster: "/images/turkish-angora-cat-hero.png",
+    poster: "/images/turkish-angora-cat-1.png",
+    backdrop: "/images/turkish-angora-cat-hero.png",
     profile: {
       origin: "Turkey",
       height: `8''- 10''`,

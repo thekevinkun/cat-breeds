@@ -1,10 +1,11 @@
-import { Header, Hero } from "@/sections"
+import { Header, Hero, ContentList } from "@/sections"
 
 const Home = () => {
   return (
     <>
       <Header />
       <Hero />
+      <ContentList />
     </>
   )
 }
