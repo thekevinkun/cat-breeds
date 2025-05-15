@@ -3,13 +3,10 @@
 import { useEffect, useState, useRef } from "react";
 import { useInView } from "react-intersection-observer";
 
-import { LoadingDotLottie } from "@/components";
-
 import { heroVideos } from "@/data/videos";
 
-const Hero = () => {
+const Hero = ({ onVideoReady }) => {
   const [playedVideo, setPlayedVideo] = useState(null);
-  const [videoReady, setVideoReady] = useState(false);
   const { ref, inView } = useInView();
   const videoRef = useRef(null);
 
@@ -17,11 +14,13 @@ const Hero = () => {
   useEffect(() => {
     if (heroVideos.length > 0) {
       const randomIndex = Math.floor(Math.random() * heroVideos.length);
-      setPlayedVideo(heroVideos[randomIndex]);
+
+      setTimeout(() => {
+        setPlayedVideo(heroVideos[randomIndex]);
+      }, 3000);
     }
   }, [])
 
-  // Play/Pause video inView of Hero
   useEffect(() => {
     if (!playedVideo || !videoRef.current) return;
 
@@ -30,11 +29,11 @@ const Hero = () => {
     } else {
       videoRef.current.pause();
     }
-  }, [inView, playedVideo])
+  }, [inView, playedVideo]);
 
   return (
     <section id="home" className="hero">
-      {playedVideo ?
+      {playedVideo &&
       <>
         <div ref={ref} className="hero__video-wrapper"> 
           <video
@@ -44,19 +43,15 @@ const Hero = () => {
             muted
             playsInline
             controls={false}
-            onCanPlay={() => setVideoReady(true)}
+            onCanPlay={onVideoReady}
             className="hero-video"
           >
             <source src={playedVideo.videoUrl} type="video/mp4"/>
           </video>
         </div>
         
-        {videoReady &&
-          <div className="hero-overlay"/>
-        }
+        <div className="hero-overlay"/>
       </>
-      :
-      <LoadingDotLottie />
       }
     </section>
   )

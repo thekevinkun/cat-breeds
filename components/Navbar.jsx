@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
-import { MenuToggle, MotionDiv } from "@/components";
+import { MenuToggle } from "@/components";
 
 import { menuList } from "@/data/menu";
 import { slideIn } from "@/lib/motion";
@@ -22,7 +22,7 @@ const Navbar = () => {
 
       <AnimatePresence>
         {isOpenMenu &&
-          <MotionDiv 
+          <motion.div 
             variants={slideIn("right", "tween", 0.35)}
             initial="hidden"
             animate="show" 
@@ -42,7 +42,7 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-          </MotionDiv>
+          </motion.div>
         }
       </AnimatePresence>
     </nav>

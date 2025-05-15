@@ -1,14 +1,7 @@
-import { Header, Hero, ContentList, Footer } from "@/sections"
+import { HomeClient } from "@/components";
 
 const Home = () => {
-  return (
-    <>
-      <Header />
-      <Hero />
-      <ContentList />
-      <Footer />
-    </>
-  )
+  return <HomeClient />
 }
 
-export default Home
+export default Home;

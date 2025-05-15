@@ -68,7 +68,10 @@ const ContentCard = ({name, poster, bgColor}) => {
             variants={cardTitleVariants}
             initial="hidden"
             animate={isClicked ? "hover" : "hidden"}
-            style={{ backgroundColor: bgColor, pointerEvents: isClicked ? "none" : "auto" }}
+            style={{ 
+              background: `linear-gradient(to top, rgba(0, 0, 0, 0.6), ${bgColor}20, transparent)`, 
+              pointerEvents: isClicked ? "none" : "auto" 
+            }}
             className="card_title"
           >
             <h2 className="text-content">{name}</h2>
@@ -77,7 +80,7 @@ const ContentCard = ({name, poster, bgColor}) => {
           <MotionDiv
             key="desktop"
             variants={cardTitleVariants}
-            style={{ backgroundColor: bgColor }}
+            style={{ background: `linear-gradient(to top, rgba(0, 0, 0, 0.6), ${bgColor}20, transparent)` }}
             className="card_title"
           >
             <h2 className="text-content">{name}</h2>

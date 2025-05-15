@@ -29,6 +29,10 @@ body {
 }
 
 /* UTILITIES STYLES */
+body.modal-open {
+  overflow: hidden;
+  touch-action: none;
+}
 
 a {
   color: inherit;
@@ -111,12 +115,20 @@ ul {
 
 /* HEADER STYLES */
 .header {
+  height: fit-content;
   display: flex;
   align-items: start;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
   inset: 0;
-  z-index: 20;
+  z-index: 30;
+  opacity: 1;
+  transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+.header.hide {
+  transform: translateY(-100%);
+  opacity: 0;
 }
 
 .header .header__logo-wrapper {
@@ -219,9 +231,9 @@ h1.header-logo .logo__text-bottom {
 .hero-overlay {
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.6)
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.4)
   );
   width: 100%;
   height: 100%;
@@ -243,6 +255,18 @@ h1.header-logo .logo__text-bottom {
   opacity: 1;
 }
 
+/* MAIN STYLES */
+main {
+  position: relative;
+}
+
+#main-sentinel {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  pointer-events: none;
+}
+
 /* CONTENT LIST CARD */
 .content-list {
   margin-bottom: 418px;
@@ -259,7 +283,7 @@ h1.header-logo .logo__text-bottom {
 .content-list .content-card {
   position: relative;
   width: 100%;
-  aspect-ratio: 1 / 0.75;
+  aspect-ratio: 1 / 0.80;
   overflow: hidden;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
   cursor: none;
@@ -267,11 +291,14 @@ h1.header-logo .logo__text-bottom {
 
 .content-card .card_overlay {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 50%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.3) 35%,
+    rgba(0, 0, 0, 0.1) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 .content-card .card_image-wrapper {
@@ -305,6 +332,10 @@ h1.header-logo .logo__text-bottom {
 
   .content-list__container {
     grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+
+  .content-list .content-card {
+    aspect-ratio: 1 / 0.75;
   }
 }
 
@@ -352,7 +383,10 @@ h1.header-logo .logo__text-bottom {
   gap: 10px;
 }
 
-.footer-link_list .footer-title,
+.footer-link_list .footer-title {
+  font-size: 0.975rem;
+}
+
 .footer-link_list .footer-link {
   font-size: 0.875rem;
   font-weight: 300;
@@ -383,6 +417,10 @@ h1.header-logo .logo__text-bottom {
   .footer-link_list .footer-title,
   .footer-link_list .footer-link {
     text-align: center;
+  }
+
+  .footer-link_list .footer-title {
+    font-size: 0.925rem;
   }
 
   .footer-link_list .footer-link {
