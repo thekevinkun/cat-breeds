@@ -31,7 +31,7 @@ const ContentCard = ({name, poster, bgColor}) => {
       }, 1000);
 
       setTimeout(() => {
-        router.push(`/cats/${slugify(name)}`);
+        router.push(`/cat/${slugify(name)}`);
       }, 1200);
     }
   }, [isMobile, name, router])
@@ -41,7 +41,7 @@ const ContentCard = ({name, poster, bgColor}) => {
       <DonutCursor isVisible={showDonutCursor}/>
 
       <MotionLink
-        href={`/cats/${slugify(name)}`}
+        href={`/cat/${slugify(name)}`}
         whileHover={!isMobile ? "hover" : undefined}
         initial="hidden"
         style={{background: bgColor, pointerEvents: isClicked ? "none" : "auto"}} 

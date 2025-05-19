@@ -4,9 +4,15 @@ import { Button, SocialMedia } from "@/components";
 
 import { footerLinks } from "@/data/menu";
 
-const Footer = () => {
+const Footer = ({ zIdx }) => {
   return (
-    <footer id="footer" className="footer section__padding">
+    <footer 
+      id="footer" 
+      className="footer section__padding"
+      style={{
+        zIndex: zIdx ? zIdx : 1
+      }}
+    >
       <div className="footer-content__wrapper">
         <div className="footer-link_list">
           <p className="footer-title">© 2025 CAT BREEDS</p>

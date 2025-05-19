@@ -1,4 +1,4 @@
-import { HomeClient } from "@/components";
+import { HomeClient } from "@/clients";
 
 const Home = () => {
   return <HomeClient />
