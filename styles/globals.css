@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
 
 :root {
   --background: #ffffff;
@@ -8,7 +8,7 @@
   --color-secondary: #171717;
   --border-color: #383838;
 
-  --font-main: "Cascadia Code", sans-serif;
+  --font-text: "Roboto";
   --font-logo: "Kaushan Script", cursive;
 }
 
@@ -21,8 +21,7 @@
 body {
   background: var(--background);
   color: var(--color-text);
-  font-family: var(--font-main);
-  font-optical-sizing: auto;
+  font-family: var(--font-text);
   font-weight: 500;
   line-height: 1.5;
   overflow-x: hidden;
@@ -113,14 +112,15 @@ ul {
 
 .text-hero {
   font-size: 3rem;
-  font-weight: 800;
+  font-weight: 900;
+  letter-spacing: 1.5px;
   text-align: center;
   text-shadow: 1px 4px 3px rgba(0, 0, 0, 0.8);
 }
 
 .text-content {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;  
   text-shadow: 1px 4px 3px rgba(0, 0, 0, 0.8);
 }
@@ -132,7 +132,7 @@ ul {
 
 .text-profile {
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .text-profile-item {
@@ -172,7 +172,7 @@ ul {
   inset: 0;
   z-index: 30;
   opacity: 1;
-  transition: transform 0.5s ease, opacity 0.3s ease;
+  transition: transform 0.8s ease, opacity 0.5s ease;
 }
 
 .header.hide {
@@ -194,7 +194,9 @@ h1.header-logo {
 }
 
 h1.header-logo .logo__text-bottom {
-  font-family: var(--font-main);
+  position: relative;
+  left: 2px;
+  font-family: var(--font-text);
   font-size: 0.575rem;
   font-weight: 300;
   letter-spacing: 3px;
@@ -659,7 +661,6 @@ article.profile .profile_existence .profile_existence-article {
 .prev-next-page .next-page .page-icon {
   margin-bottom: 1px;
   font-size: 1.25rem;
-  font-weight: 600;
 }
 
 .prev-next-page .home-page {
