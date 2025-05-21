@@ -15,8 +15,6 @@ export {
     MenuToggle,
     PrevNextPage,
     DonutCursor,
-    MotionDiv,
-    MotionLink,
     ContentCard,
     SocialMedia,
     DetailGallery,
