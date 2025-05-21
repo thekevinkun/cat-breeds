@@ -1,8 +1,10 @@
 import Image from "next/image";
 
-const HeroDetail = ({ cat, zIdx }) => {
+const HeroDetail = ({ heroRef, cat, zIdx, onImageLoad }) => {
   return (
     <section 
+        ref={heroRef}
+        id="hero-detail"
         className="hero-detail"
         style={{
             zIndex: zIdx ? zIdx : 2
@@ -10,11 +12,13 @@ const HeroDetail = ({ cat, zIdx }) => {
     >
         <div className="hero-detail__image-wrapper">
             <Image 
+                priority
                 src={cat.backdrop}
                 alt={cat.name}
                 fill
                 sizes="100vw"
                 className="hero-detail_image"
+                onLoad={onImageLoad}
             />
 
             <div className="hero-detail_overlay" />

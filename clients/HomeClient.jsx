@@ -19,7 +19,9 @@ const HomeClient = () => {
     <>
       {/* Page content (rendered right away) */}
       {videoReady &&
-        <Header />}
+        <Header />
+      }
+
       <Hero onVideoReady={() => setVideoReady(true)} />
 
       {videoReady &&
@@ -32,7 +34,7 @@ const HomeClient = () => {
       </>}  
 
       {/* Loading screen: rendered on top and fades out when ready */}
-      <LoadingDotLottie videoReady={videoReady}/>
+      <LoadingDotLottie isReady={videoReady}/>
     </>
   )
 }

@@ -1,30 +1,32 @@
 "use client"
 
-import { useEffect, useState } from "react";
-import { useMediaQuery } from "react-responsive";
+import { useEffect, useState, useRef } from "react";
 
 import { LoadingDotLottie, PrevNextPage } from "@/components";
 import { Header, HeroDetail, ContentDetail, Footer } from "@/sections";
 
 const DetailClient = ({ cat, prevCat, nextCat }) => {
-  const isMobile = useMediaQuery({ query: "(max-width: 992px)" });
   const [zIdxHero, setZIdxHero] = useState(2);
   const [zIdxFooter, setZIdxFooter] = useState(1);
-  const [showContent, setShowContent] = useState(false); 
+
+  const heroRef = useRef(null);
+  const mainRef = useRef(null);
+  const [heroHeight, setHeroHeight] = useState(0);
 
   useEffect(() => {
-    // Show actual content after 5s
-    const timeout = setTimeout(() => {
-      setShowContent(true);
-    }, 3000);
+    const adjustMainOffset = () => {
+      if (heroRef.current) {
+        const height = heroRef.current.getBoundingClientRect().height;
+        setHeroHeight(height);
+      }
+    };
 
-    return () => clearTimeout(timeout);
+    window.addEventListener("resize", adjustMainOffset);
+    return () => window.removeEventListener("resize", adjustMainOffset);
   }, []);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (isMobile) return;
-      
       const scrollY = window.scrollY;
       
       if (scrollY >= 1100) {
@@ -40,20 +42,44 @@ const DetailClient = ({ cat, prevCat, nextCat }) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  if (!showContent) {
-    return <LoadingDotLottie />;
-  }
-
   return (
     <>
-        <Header />
-        <HeroDetail cat={cat} zIdx={zIdxHero}/>
-        <main id="main" className="main-detail">
-            <div id="main-sentinel" />
-            <ContentDetail cat={cat}/>
-            <PrevNextPage prevCat={prevCat} nextCat={nextCat}/>
-        </main>
-        <Footer zIdx={zIdxFooter}/>
+        {heroHeight > 0 &&
+          <Header />
+        }
+
+        <HeroDetail 
+          heroRef={heroRef} 
+          cat={cat} 
+          zIdx={zIdxHero}
+          onImageLoad={() => {
+            if (heroRef.current) {
+              const height = heroRef.current.getBoundingClientRect().height;
+              setHeroHeight(height);
+            }
+          }}
+        />
+
+        {heroHeight > 0 &&
+        <>
+          <main 
+            ref={mainRef}
+            id="main-detail" 
+            className="main-detail"
+            style={{ 
+              marginTop: `${heroHeight-1}px`,
+              marginBottom: "420px"
+            }}
+          >
+              <div id="main-sentinel" />
+              <ContentDetail cat={cat}/>
+              <PrevNextPage prevCat={prevCat} nextCat={nextCat}/>
+          </main>
+          <Footer zIdx={zIdxFooter}/>
+        </>
+        }
+
+        <LoadingDotLottie isReady={heroHeight > 0}/>
     </>
   )
 }

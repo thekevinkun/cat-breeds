@@ -16,14 +16,14 @@ const PrevNextPage = ({ prevCat, nextCat }) => {
                     className="prev-page"
                 >
                     <GrFormPreviousLink className="page-icon" />
-                    Previous Cat
+                    Prev Cat
                 </Link>
             :
                 <div
                     className="prev-page disabled"
                 >
                     <GrFormPreviousLink className="page-icon" />
-                    Previous Cat
+                    Prev Cat
                 </div>
             }
 

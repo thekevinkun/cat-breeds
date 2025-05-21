@@ -433,14 +433,9 @@ main {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.65), transparent);
 }
 
-.main-detail {
-  margin-top: 428px;
-  margin-bottom: 420px;
-}
-
 @media screen and (max-width: 992px) { 
   .main-detail {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
   }
 }
 

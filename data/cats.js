@@ -31,7 +31,76 @@ export const cats = [
       "/images/abyssinian-cat-5.png",
       "/images/abyssinian-cat-6.png",
     ],
-    bgColor: "#dc8648",
+    bgColor: "#c4a65e",
+  },
+  {
+    name: "American Polydactyl",
+    otherNames: ["Hemingway cats"],
+    poster: "/images/american-polydactyl-cat-1.png",
+    backdrop: "/images/american-polydactyl-cat-hero.png",
+    profile: {
+      origin: "United States",
+      height: `10''-14''`,
+      adultWeight: "7-15 pounds",
+      lifeSpan: "14-16 years",
+      temperament: ["Intelligent", "Friendly", "Affectionate", "Inquisitive"],
+      existence: [
+        `Even though the American polydactyl cat isn’t a specific breed, these cats share 
+        a unique genetic trait. Polydactyly is caused by a dominant gene that also causes 
+        hyperdactyly (extra toes or digits) in other mammals – even humans can carry this gene!`,
+        `There are different types of polydactyly in cats:`,
+        `1. Preaxial polydactyly causes extra digits to form on the inside of the paw, causing 
+        the cat to appear as if it’s wearing mittens.`, 
+        `2. Postaxial polydactyly causes extra digits to form on the outer edges of the paw, 
+        leading to nicknames such as snowshoe cat, patty paws, or pancake paws.`,
+        `It's worth noting that Pixie Bob and Maine Coon polydactyl cats are in categories of their own. 
+        At one time, an astonishing 40% of all Maine Coon cats had extra toes and it’s still quite 
+        common for these kitties to exhibit the polydactyl trait. Some Maine Coon breeders even 
+        select for it, as the Maine Coon Polydactyl is recognized by The International Cat Association 
+        (TICA) and some smaller cat fanciers clubs.`
+      ]
+    },
+    gallery: [
+      "/images/american-polydactyl-cat-2.png",
+      "/images/american-polydactyl-cat-3.png",
+      "/images/american-polydactyl-cat-4.png",
+      "/images/american-polydactyl-cat-5.png",
+      "/images/american-polydactyl-cat-6.png",
+    ],
+    bgColor: "#d0a594",
+  },
+  {
+    name: "Australian Mist",
+    otherNames: ["Spotted Mist"],
+    poster: "/images/australian-mist-cat-1.png",
+    backdrop: "/images/australian-mist-cat-hero.png",
+    profile: {
+      origin: "Australia",
+      height: `8''-10''`,
+      adultWeight: "7-14 pounds",
+      lifeSpan: "12-16 years",
+      temperament: ["Friendly", "Playful", "Affectionate", "Family-oriented"],
+      existence: [
+        `The Australian Mist cat was created in Australia in the 1970s by Dr. Truda Straede using Burmese, 
+        Abyssinians, and domestic short-haired cats. The cat's unique coat colors and spotted patterns 
+        led to its original name: the Spotted Mist. As the breed continue to evolve, marbled coat patterns 
+        emerged, leading to an official name change in 1998 to Australian Mist.`,
+        `Australian Mist cats are widespread throughout their native country, but have yet to be widely 
+        recognized through Europe, the United Kingdom, and the United States. Although not currently 
+        recognized by the Cat Fanciers' Association (CFA), the Australian Mist is fully recognized by 
+        The International Cat Association (TICA).`, 
+        `This breed's good-natured personality, general good health, and unique appearance 
+        are contributing to greater popularity outside Australia.`,
+      ]
+    },
+    gallery: [
+      "/images/australian-mist-cat-2.png",
+      "/images/australian-mist-cat-3.png",
+      "/images/australian-mist-cat-4.png",
+      "/images/australian-mist-cat-5.png",
+      "/images/australian-mist-cat-6.png",
+    ],
+    bgColor: "#5d4030",
   },
   {
     name: "Bengal",
@@ -140,7 +209,83 @@ export const cats = [
       "/images/burmese-cat-5.png",
       "/images/burmese-cat-6.png",
     ],
-    bgColor: "#ecc566",
+    bgColor: "#d5b15c",
+  },
+  {
+    name: "Cornish Rex",
+    otherNames: ["The Greyhound of Cats"],
+    poster: "/images/cornish-rex-cat-1.png",
+    backdrop: "/images/cornish-rex-cat-hero.png",
+    profile: {
+      origin: "United Kingdom",
+      height: `12''-14''`,
+      adultWeight: "6-9 pounds",
+      lifeSpan: "9-13+ years",
+      temperament: ["Extroverted", "Comical", "Affectionate", "Inquisitive"],
+      existence: [
+        `The Cornish Rex cat breed is the product of a natural genetic mutation. The breed got 
+        its start in Cornwall, England, when a barn cat gave birth to an unusual kitten in 1950. 
+        The kitten, later named Kallibunker (Kalli for short), had a short, curly, red-and-white coat. 
+        His owner, Nina Ennismore, bred him back to his mother twice. Both of the resulting litters 
+        contained curly-haired kittens.`,
+        `Later, feline geneticists discovered that Rex cats are produced only when both parents have 
+        the recessive gene. Other breeds were eventually introduced into the breeding program, 
+        including Burmese, Siamese, and British Shorthair cats. Even though the resulting kittens 
+        had short coats with normal hair, they all carried the recessive gene and subsequent breedings 
+        typically produced kittens with the short, curly coats that make these cats so remarkable.`,
+        `Cornish Rex cats were brought to the United States in 1957. The breed was granted official 
+        recognition by the American Cat Fanciers' Association and the Canadian Cat Association in 1963. 
+        The Cat Fanciers' Association gave the breed its stamp of approval in 1964. Today, the Cornish Rex 
+        has gained worldwide popularity and is recognized by all cat registries.`
+      ],
+    },
+    gallery: [
+      "/images/cornish-rex-cat-2.png",
+      "/images/cornish-rex-cat-3.png",
+      "/images/cornish-rex-cat-4.png",
+      "/images/cornish-rex-cat-5.png",
+      "/images/cornish-rex-cat-6.png",
+    ],
+    bgColor: "#8a8075",
+  },
+  {
+    name: "Egyptian Mau",
+    otherNames: ["Pharaoh Cat"],
+    poster: "/images/egyptian-mau-cat-1.png",
+    backdrop: "/images/egyptian-mau-cat-hero.png",
+    profile: {
+      origin: "Egypt",
+      height: `11''-14''`,
+      adultWeight: "6-14 pounds",
+      lifeSpan: "12-15 years",
+      temperament: ["Alert", "Athletic", "Loyal", "Sensitive"],
+      existence: [
+        `As the breed's name suggests, the Egyptian Mau cat is thought to have originated in Egypt, 
+        though there are no clear records as to how Egyptian street cats became the modern breed we 
+        know today. No one knows exactly when these cats were developed, but if the Egyptian Mau can 
+        indeed trace its roots back to Egypt, the breed is an ancient one.`,
+        `Egyptian hieroglyphics depict spotted cats that bear similarities to today’s Egyptian Mau cats, 
+        so it is entirely possible that this breed or its close ancestors were among those revered by 
+        ancient Egyptian people, perhaps more than 3,500 years ago.`,
+        `The standardized Egyptian Mau cats we know and love today were likely developed using spotted 
+        Egyptian street cats, which are believed to count North African wildcats among their ancestors.`,
+        `During the early centuries A.D., Romans brought spotted Egyptian cats to Italy, and from there, 
+        these cats made their way around Europe. It is likely that domestic cats with Egyptian origins 
+        interbred with European wildcats, ultimately treating humanity to the northern European domestic 
+        cats that are so prevalent now.`,
+        `Pedigreed Egyptian cats were bred in Europe prior to the second World War, but few records survive. 
+        Like many cat breeds, the Egyptian Mau was nearly extinct by the end of World War II; food shortages 
+        and widespread devastation led to tragedy for pets all throughout the affected regions.`,
+      ],
+    },
+    gallery: [
+      "/images/egyptian-mau-cat-2.png",
+      "/images/egyptian-mau-cat-3.png",
+      "/images/egyptian-mau-cat-4.png",
+      "/images/egyptian-mau-cat-5.png",
+      "/images/egyptian-mau-cat-6.png",
+    ],
+    bgColor: "#a88b65",
   },
   {
     name: "Maine Coon",
@@ -184,10 +329,51 @@ export const cats = [
     bgColor: "#8b9898",
   },
   {
-    name: "Oriental Cat",
+    name: "Munchkin",
+    otherNames: ["Kangaroo Cat", "Magpie", "Sausage Cat"],
+    poster: "/images/munchkin-cat-1.png",
+    backdrop: "/images/munchkin-cat-hero.png",
+    profile: {
+      origin: "United States",
+      height: `6''-9''`,
+      adultWeight: "4-9 pounds",
+      lifeSpan: "12-15 years",
+      temperament: ["Sweet", "Friendly", "Curious", "Playful"],
+      existence: [
+        `The Munchkin cat breed is relatively new, although individual cats with shorter than average 
+        legs have been noted and even encouraged throughout history.`,
+        `The breed's story begins in 1983, when a female cat was rescued in Louisiana. She had been 
+        abandoned outdoors, and had been chased under a pickup truck by a dog. This cat, later 
+        named Blackberry, was pregnant and gave birth to a litter that included some kittens with short 
+        legs. Her rescuer, Sandra Hochenedel, gave one of the male short-legged kittens to a friend 
+        named Kay LaFrance. This kitten was named Toulouse, and was eventually bred back to Blackberry. 
+        Their offspring formed the foundation for the Munchkin cat breed as we know it today.`,
+        `Responsible breeders do their best to ensure that kittens are healthy and comfortable 
+        in their bodies. Instead of pairing registered Munchinks with one another, they outcross 
+        Munchkin cats with domestic cats and other purebreds, ensuring a diverse gene pool and 
+        reducing the likelihood of genetic diseases.`,
+        `The International Cat Association (TICA) and the Southern Africa Cat Council are the only 
+        registries that currently accept Munchkin cats. Much controversy surrounds the breed, as 
+        not all breeders take responsibility for preventing painful issues that adversely affect 
+        the welfare of the individuals they produce.`,
+        `TICA granted the Munchkin cat breed championship status in 2003, but no progress toward 
+        advancing the Munchkin's status in the world of cat fancy has occurred since then.`
+      ],
+    },
+    gallery: [
+      "/images/munchkin-cat-2.png",
+      "/images/munchkin-cat-3.png",
+      "/images/munchkin-cat-4.png",
+      "/images/munchkin-cat-5.png",
+      "/images/munchkin-cat-6.png",
+    ],
+    bgColor: "#064076",
+  },
+  {
+    name: "Oriental Shorthair",
     otherNames: ["Javanese", "Mandarin"],
-    poster: "/images/oriental-cat-1.png",
-    backdrop: "/images/oriental-cat-hero.png",
+    poster: "/images/oriental-shorthair-cat-1.png",
+    backdrop: "/images/oriental-shorthair-cat-hero.png",
     profile: {
       origin: "United Kingdom",
       height: `8''-10''`,
@@ -211,13 +397,52 @@ export const cats = [
       ],
     },
     gallery: [
-      "/images/oriental-cat-2.png",
-      "/images/oriental-cat-3.png",
-      "/images/oriental-cat-4.png",
-      "/images/oriental-cat-5.png",
-      "/images/oriental-cat-6.png",
+      "/images/oriental-shorthair-cat-2.png",
+      "/images/oriental-shorthair-cat-3.png",
+      "/images/oriental-shorthair-cat-4.png",
+      "/images/oriental-shorthair-cat-5.png",
+      "/images/oriental-shorthair-cat-6.png",
     ],
     bgColor: "#d01414",
+  },
+  {
+    name: "Persian",
+    otherNames: ["Persian longhair"],
+    poster: "/images/persian-cat-1.png",
+    backdrop: "/images/persian-cat-hero.png",
+    profile: {
+      origin: "Iran",
+      height: `8''-10''`,
+      adultWeight: "8-15 pounds",
+      lifeSpan: "14-15 years",
+      temperament: ["Sweet", "Gentle", "Quiet", "Charming"],
+      existence: [
+        `The Persian is an ancient breed, with a history that spans thousands of years. 
+        These cats—or cats with a similar appearance—can be seen on hieroglyphics that date back to 
+        approximately 1684 BC. However, the exact origins of the breed are unknown since we have no 
+        written history this far back.`,
+        `Sometime during the 1600s, an Italian composer and adventurer named Pietro della Valle described 
+        Persian cats from the Khorazan region of Persia, noting that most had long, silky, gray coats. 
+        His manuscript, known as Voyages de Pietro della Valle, mentions that the cats made their way to 
+        Persia from India with Portuguese travelers.`,
+        `With frequent travel came additional imports: both Persian and Angora cats made their way to 
+        France and England. In England, they were called French cats and they quickly gained popularity 
+        for their unique appearance and friendly personalities.`,
+        `By the 1900s, Persian cats—then known as Persian Longhairs or simply as Longhairs—outpaced 
+        Angoras in terms of popularity, perhaps because Queen Victoria had two blue Persians and people 
+        of the day were heavily influenced by the Queen's personal tastes.`,
+        `Today, Persians are renowned as North America’s most popular cat breed. 
+        The Persian is recognized by cat breed registries worldwide.`
+      ],
+    },
+    gallery: [
+      "/images/persian-cat-2.png",
+      "/images/persian-cat-3.png",
+      "/images/persian-cat-4.png",
+      "/images/persian-cat-5.png",
+      "/images/persian-cat-6.png",
+    ],
+    bgColor: "#279b91",
   },
   {
     name: "Savannah",
@@ -293,7 +518,7 @@ export const cats = [
       "/images/sphynx-cat-5.png",
       "/images/sphynx-cat-6.png",
     ],
-    bgColor: "#e5b0c6",
+    bgColor: "#cc93ab",
   },
   {
     name: "Turkish Angora",
@@ -332,6 +557,6 @@ export const cats = [
       "/images/turkish-angora-cat-5.png",
       "/images/turkish-angora-cat-6.png",
     ],
-    bgColor: "#cdcfcf",
+    bgColor: "#ababab",
   },
 ];

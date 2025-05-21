@@ -2,7 +2,7 @@ import React from "react";
 import Lottie from "lottie-react";
 import loadingAnimation from "@/public/animations/loading-lottie.json";
 
-const LoadingDotLottie = ({ videoReady }) => {
+const LoadingDotLottie = ({ isReady }) => {
   return (
     <div 
         style={{
@@ -15,8 +15,8 @@ const LoadingDotLottie = ({ videoReady }) => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            opacity: videoReady ? 0 : 1,
-            pointerEvents: videoReady ? "none" : "all",
+            opacity: isReady ? 0 : 1,
+            pointerEvents: isReady ? "none" : "all",
             transition: "opacity 0.5s ease",
         }}
     >
