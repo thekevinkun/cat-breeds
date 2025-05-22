@@ -416,6 +416,7 @@ main {
   width: 100%;
   min-height: 66.66vh;
   overflow: hidden;
+  transform: translateZ(0);
 }
 
 .hero-detail .hero-detail__image-wrapper {
@@ -427,6 +428,8 @@ main {
 .hero-detail .hero-detail__image-wrapper .hero-detail_image {
   object-fit: cover;
   object-position: center;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .hero-detail .hero-detail__header {
