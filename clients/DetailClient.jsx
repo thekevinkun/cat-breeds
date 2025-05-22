@@ -56,6 +56,12 @@ const DetailClient = ({ cat, prevCat, nextCat }) => {
             if (heroRef.current) {
               const height = heroRef.current.getBoundingClientRect().height;
               setHeroHeight(height);
+
+              // force mobile Safari repaint
+              requestAnimationFrame(() => {
+                window.scrollBy(0, 1);
+                window.scrollBy(0, -1);
+              });
             }
           }}
         />
