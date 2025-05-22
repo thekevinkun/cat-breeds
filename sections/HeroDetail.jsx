@@ -18,7 +18,7 @@ const HeroDetail = ({ heroRef, cat, zIdx, onImageLoad }) => {
                 fill
                 sizes="100vw"
                 className="hero-detail_image"
-                onLoad={onImageLoad}
+                onLoadingComplete={onImageLoad}
             />
 
             <div className="hero-detail_overlay" />

@@ -306,6 +306,12 @@ h1.header-logo .logo__text-bottom {
   opacity: 1;
 }
 
+@media screen and (max-width: 768px) {
+  .hero .hero__video-wrapper .hero-video {
+    object-fit: fill;
+  }
+}
+
 /* MAIN STYLES */
 main {
   position: relative;
@@ -338,6 +344,12 @@ main {
   overflow: hidden;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
   cursor: none;
+}
+
+@media screen and (max-width: 768px) {
+  .content-list .content-card {
+    cursor: default;
+  }
 }
 
 .content-card .card_overlay {

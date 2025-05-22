@@ -38,7 +38,9 @@ const ContentCard = ({name, poster, bgColor}) => {
 
   return (
     <>
-      <DonutCursor isVisible={showDonutCursor}/>
+      {!isMobile &&
+        <DonutCursor isVisible={showDonutCursor}/>
+      }
 
       <MotionLink
         href={`/cat/${slugify(name)}`}
