@@ -8,7 +8,7 @@ A modern, interactive web application showcasing detailed information about vari
 
 ## 🌐 Live Demo
 
-Visit the live site: [Cat Breeds](https://thekevinkun-cat-breeds.vercel.app/)
+Visit the live site: [Cat Breeds](https://catbreedsencyclopedia.vercel.app/)
 
 ## ✨ Features
 
@@ -181,3 +181,4 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 ---
 
 ⭐ Star this repository if you found it helpful!
+
