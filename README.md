@@ -166,7 +166,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 👨‍💻 Author
 
-Created with ❤️ by [Your Name]
+Created with ❤️ by Kevin Mahendra
 
 ## 🤝 Contributing
 
@@ -181,4 +181,5 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 ---
 
 ⭐ Star this repository if you found it helpful!
+
 
